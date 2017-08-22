@@ -1,13 +1,14 @@
 
 h1 {
 font-style: georgia, helvetica, arial;
-color: red;
+color: gold;
 }
 
 html,body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 #map-holder {
     height: 350px;
