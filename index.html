@@ -1,25 +1,13 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-
 <head>
-
-  <link rel="stylesheet" type="text/css" href="style sheet.css">
-
-<title> Restuarant Picker</title>
-
-<head>
-
-<body>
-
-<h1> Time to Eat! </h1>
-<br>
-<br>
-<p> Current City: </p>
+<title>Restuarant Picker</title>
+<link rel="stylesheet" type="text/css" href="style sheet.css">
 
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script>
+
 var watchID;
 function getLocation()
 {
@@ -122,24 +110,10 @@ function catchError(error) {
 </script>
 </head>
 <body onload="getLocation()">
+  <h1>Lets Eat!</h1>
 <div id="map-holder"></div>
 <button onclick="watchLocation()">Start Watching</button>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <button onclick="stopWatch()">Stop Watching</button>
-
-
-
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
