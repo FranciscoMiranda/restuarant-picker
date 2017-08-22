@@ -1,25 +1,14 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-
 <head>
+<title>Restuarant Picker</title>
+<link rel="stylesheet" type="text/css" href="style sheet.css">
 
-  <link rel="stylesheet" type="text/css" href="style sheet.css">
-
-<title> Restuarant Picker</title>
-
-<head>
-
-<body>
-
-<h1> Time to Eat! </h1>
-<br>
-<br>
-<p> Current City: </p>
-
+<center>
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script>
+
 var watchID;
 function getLocation()
 {
@@ -66,7 +55,7 @@ function getPosition(position)
 {
     var location = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
     var mapOptions = {
-        zoom : 12,
+        zoom : 17,
         center : location,
         mapTypeId : google.maps.MapTypeId.ROADMAP
     };
@@ -122,24 +111,13 @@ function catchError(error) {
 </script>
 </head>
 <body onload="getLocation()">
+  <h1>Lets Eat!</h1>
 <div id="map-holder"></div>
 <button onclick="watchLocation()">Start Watching</button>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <button onclick="stopWatch()">Stop Watching</button>
-
-
-
 </body>
 
-
-
-
-
-
-
-
-
-
-
+</center>
 
 </html>
